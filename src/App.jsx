@@ -2,6 +2,7 @@ import { useState } from "react";
 import StepOne from "./components/StepOne";
 import StepThree from "./components/StepThree";
 import StepTwo from "./components/StepTwo";
+import StepFour from "./components/StepFour";
 
 const App = () => {
   const [step, setStep] = useState(1);
@@ -16,8 +17,10 @@ const App = () => {
         ) : step === 2 ? (
             <StepTwo 
             setStep={setStep} />
-        ): (
+        ): step === 3 ? (
             <StepThree setStep={setStep} />
+        ) : (
+            <StepFour />
         )}
         
       </div>

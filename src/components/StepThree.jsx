@@ -17,7 +17,7 @@ const StepThree = ({ setStep }) => {
         console.log(data)
 
         alert('Form submitted successfully')
-        setStep(1);
+        setStep(4);
 
         
     };
